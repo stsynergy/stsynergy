@@ -1,0 +1,105 @@
+/* Ogólne style */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.logo {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    display: none; /* Ukryj logo dla większych ekranów */
+}
+
+/* Style dla sekcji */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.section-title {
+    text-align: center;
+}
+
+/* Style dla pakietów */
+.packages {
+    max-width: 1400px; /* Maksymalna szerokość sekcji */
+    margin: 0 auto; /* Wyśrodkowanie sekcji */
+    text-align: center;
+    padding: 0; /* Usunięcie paddingu */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05)); /* Gradient tła */
+}
+
+.package {
+    width: 100%;
+    max-width: 750px; /* Maksymalna szerokość pakietów */
+    margin: 20px auto; /* Wyśrodkowanie pakietów */
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    position: relative; /* Ustawienie pozycji względem rodzica */
+    overflow: hidden; /* Ukrycie elementów wystających poza pakiet */
+    background-color: #f9f9f9; /* Domyślne tło pakietu */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Cień */
+}
+
+/* Kolory tła dla poszczególnych pakietów */
+.package.online {
+    background-color: #e8f5ff; /* Kolor tła dla Pakietu Online */
+}
+
+.package.standard {
+    background-color: #e6ffe9; /* Kolor tła dla Pakietu Standard */
+}
+
+.package.premium {
+    background-color: #fff9db; /* Kolor tła dla Pakietu Premium */
+}
+
+/* Reszta stylów dla pakietów bez zmian */
+.package h3 {
+    margin-top: 0;
+}
+
+.package p {
+    margin-bottom: 15px;
+}
+
+.package .cta-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    .offer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .package {
+        width: calc(33.33% - 20px);
+    }
+}
