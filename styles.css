@@ -7,9 +7,9 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #f8f8f8;
     color: #fff;
-    padding: 20px;
+    padding: 5px;
     text-align: center;
 }
 
@@ -27,12 +27,32 @@ header h1 {
     display: none; /* Ukryj logo dla większych ekranów */
 }
 
+/* Tło szare dla niektórych kontenerów */
+.bg-light-gray {
+    
+	background-color: #E6E6E6;
+	
+}
+
+.bg-light-gray-b {
+    
+	background-color: #CECECE;
+	
+}
+
+.logo-container {
+    background-color: #f8f8f8; /* Białe tło */
+    padding: 20px; /* Dodajemy wypełnienie dla estetyki */
+    text-align: center; /* Wyśrodkowanie tekstu */
+}
+
 /* Style dla sekcji */
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
+
 }
 
 .section-title {
@@ -41,7 +61,7 @@ header h1 {
 
 /* Style dla pakietów */
 .packages {
-    max-width: 1400px; /* Maksymalna szerokość sekcji */
+    /*max-width: 1400px; /* Maksymalna szerokość sekcji */
     margin: 0 auto; /* Wyśrodkowanie sekcji */
     text-align: center;
     padding: 0; /* Usunięcie paddingu */
@@ -63,15 +83,15 @@ header h1 {
 
 /* Kolory tła dla poszczególnych pakietów */
 .package.online {
-    background-color: #e8f5ff; /* Kolor tła dla Pakietu Online */
+    background-color: #DADADA; /* Kolor tła dla Pakietu Online */
 }
 
 .package.standard {
-    background-color: #e6ffe9; /* Kolor tła dla Pakietu Standard */
+    background-color: #D2D2D2; /* Kolor tła dla Pakietu Standard */
 }
 
 .package.premium {
-    background-color: #fff9db; /* Kolor tła dla Pakietu Premium */
+    background-color: #CCCCCC; /* Kolor tła dla Pakietu Premium */
 }
 
 /* Reszta stylów dla pakietów bez zmian */
